@@ -6,3 +6,5 @@ MVP de Control Horario desarrollado con Google Antigravity y Supabase MCP (Sprin
 - Autenticación de usuarios
 - Registro de jornada
 - Historial de jornadas
+## Arquitectura
+Ver `docs/arquitectura.md`
