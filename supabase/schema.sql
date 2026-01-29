@@ -1,6 +1,7 @@
-import { createClient } from '@supabase/supabase-js';
-
-export const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+create table jornadas (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references auth.users not null,
+  start_time timestamp,
+  end_time timestamp,
+  created_at timestamp default now()
 );
